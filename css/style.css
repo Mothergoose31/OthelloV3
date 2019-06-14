@@ -1,0 +1,356 @@
+html {
+    background-color: floralwhite;
+    margin: 0;
+	padding: 0;
+	text-align: center;
+}
+h1 {
+    margin: 0;
+    line-height: 100px;
+}
+header {
+    text-shadow: 4px 4px 0px #3d3d3d;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #010101;
+    text-align: center;
+    font-size: 35px;
+    height: 100px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Spectral', serif;
+}
+
+body {
+background-size: cover;
+background-image: url("../img/MiddleEarth.jpg");
+background-attachment: fixed;
+background-position: center;
+margin: 0;
+padding: 0;
+padding-bottom: 25px;
+}
+#theBoxToRuleThemAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto 0.4em auto;
+}
+
+#menu1{
+    height:74vh;
+    width: 22vw;
+    
+    font-family: 'Spectral', serif;
+    font-weight: bolder;
+    font-style: italic;
+    color:white;
+    display: flex;
+    flex: 1 1 auto;
+
+
+}
+#menu2{
+    height:74vh;
+    color:white;
+    font-size: 16px;
+    font-family: 'Spectral', serif;
+	width: 22vw;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    flex: 1 1 auto;
+
+
+}
+
+
+
+#board {
+    display: grid;
+        margin: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        background-color: rgba(184  ,165, 132, 0.5);
+        padding: 5px;
+        width: 45vw;
+        height: 45vw;
+        
+}
+
+.box {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px 1px rgb(20, 20, 20);
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.block-balrog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("../img/BalrogSmall.jpg");
+    backface-visibility: hidden;
+    background-size:contain;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.block-wizard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("../img/wizardSprite.jpg");
+    backface-visibility: hidden;
+    background-size: contain;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.valid {
+    background-image: url("https://raw.githubusercontent.com/t1m1t/othello/master/images/allowed_pic.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.valid:hover {
+    border: 2px solid white;
+    background: rgb#B8A584;
+}
+
+.score{
+    width: 30%;
+    
+    color: white;
+    padding: 6px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 10px;
+    
+    margin:auto;
+}
+
+.score p {
+    margin-bottom: 4px;
+    margin-top: -1px;
+    font-family:'Spectral', serif;
+    font-weight: bold;
+    
+}
+#balrogScore{
+    background-image: url("../img/BalrogSmall.jpg");
+    background-size: contain;
+    border: 1px solid black;
+
+}
+#maiarScore{
+    background-image: url("../img/MaiarSmall.jpg");
+    background-size:contain;
+    border: 1px solid black;
+}
+.scoreBlock {
+    height: 30px;
+    width: 60px;
+    color: white;
+    
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBlock p {
+    margin: 0;
+    padding: 0;
+}
+
+#game-button {
+    margin:auto;
+    border: 1px solid white;
+    background: rgba(184  ,165, 132, 0.5);
+    color: white;
+    padding: 6px;
+    height: 40px;
+    width: 21%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+#game-button:hover, #restart:hover {
+    cursor: pointer;
+    color: rgb(168, 37, 201);
+    border-color:rgba(218, 144, 17, 0.5);
+}
+
+/* display:none means that the tag in question will not appear on the page at all
+(although you can still interact with it through the dom). There will be no space allocated 
+for it between the other tags.
+
+visibility:hidden means that unlike display:none, the tag is not visible, but space is
+ allocated for it on the page. The tag is rendered, it just isn't seen on the page. */
+.game-results {
+    display: none;
+}
+
+#game-results-text {
+    color: white;
+    font-family: 'Spectral', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.game-results-active {
+    color: white;
+    z-index: 5;
+    width: 300px;
+    height: 120px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#no-moves {
+    height: 80px;
+    width: 250px;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family:  'Spectral', serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#restart {
+    font-family:  'Spectral', serif;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 0 15px 0;
+}
+
+@media (min-height: 530px) {
+    #game {
+width: 420px;
+height: 472px;
+    }
+
+    #controls {
+    width: 420px;
+    }
+
+    #board {
+    width: 420px;
+    height: 412px;
+    }
+
+    .box {
+    width: 50px;
+    height: 50px;
+    }
+
+    .tile {
+    width: 34px;
+    height: 34px;
+    }
+
+    .score-block {
+    width: 32%;
+    }
+
+}
+
+
+@media (min-height: 630px) {
+
+    #game {
+    width: 500px;
+    height: 552px;
+    }
+
+    #controls {
+    width: 500px;
+    }
+
+    #board {
+    width: 500px;
+    height: 492px;
+    }
+
+    .box {
+    width: 60px;
+    height: 60px;
+    }
+
+    .block {
+    width: 44px;
+    height: 44px;
+    }
+
+    .score-block {
+    width: 33%;
+    }
+
+}
