@@ -1,11 +1,4 @@
 # OthelloV3
-This Othello Game was made over the Course of a week .
-Sunday was spent creating the css and html for the game 
-first thing did was create a wireframe.
-![alt text](img/wireframe.jpg)
-Monday I wrote all events that took place within the game but I was running into a problem of not really being sure how to keep track of the  data structure and the game board and connecting all the events together 
-It is here where I would like to acknowledge that Monday Tuesday and Wednesday night I spent  with my neighbors kyle and rajetah (kyle works at google , rajetah works at amazon ) I made them dinner and they helped me code cumulatively they probably helped me for 9 hours 
-Without them I doubt I would have had a finished this project. 
 
 # HOW TO PLAY 
 
@@ -16,20 +9,32 @@ Each piece played must be laid adjacent to an opponent's piece so that the oppon
 
 It can happen that a piece is played so that pieces or rows of pieces in more than one direction are trapped between the new piece played and other pieces of the same colour. In this case, all the pieces in all viable directions are turned over.
 
+# Oveview of my progress
+
 The game is over when neither player has a legal move (i.e. a move that captures at least one opposing piece) or when the board is full.
+
+This Othello Game was made over the Course of a week .
+Sunday was spent creating the css and html for the game 
+first thing did was create a wireframe.
+![alt text](img/wireframe.jpg)
+Monday I wrote all events that took place within the game but I was running into a problem of not really being sure how to keep track of the  data structure and the game board and connecting all the events together 
+It is here where I would like to acknowledge that Monday Tuesday and Wednesday night I spent  with my neighbors kyle and rajetah (kyle works at google , rajetah works at amazon ) I made them dinner and they helped me code cumulatively they probably helped me for 3 and a half hours
+Without them I doubt I would have had a finished this project. 
+
 
 # MUCH GRATITUDE TO 
 
-* kyle
-* Rajetah
-* Steve ,
-* Mike,
-* Carlo,
-* Garrett
- * pingyi
-* GA design class
+* kyle - teaching me more about arrow functions , string templete literals  the .find function  general flow of the code
+* Rajetah - more than 50 % of the ai was in thanks to her 
+* Steve ,- pushing me to add an ai 
+* Mike,- general advice
+* Carlo,- general advice
+* Garrett - went though my code and applied mascara to my code it looks SO GOOD ( You're welcome steve)
+ * pingyi - general advice/ helping me with the layout
+* GA design class -helping  me make it look pretty
 
-**Sources I looked at**
+
+## sources I looked at
 pratically all versions of Othello on Codepen
 https://codepen.io/k44/pen/zKiIo
  Helped me  understand the math's behind othello
@@ -49,12 +54,20 @@ https://codepen.io/nakyos/pen/EmXBYv
 
 I spent A while just combing through this code and trying to uderstand how the AI worked ,
 it also happens to be the BEST VERSION OF OTHELLO IN CODEPEN
-I CANT BELIEVE HIS IS ONLY 334 Lines of javascript code 
+I CANT BELIEVE HIS CODE IS ONLY 334 Lines of javascript 
+
+# Problems I faced
 
 
 For starters when I was calling my variables at the start of the JavaScript I was using get element by class and get element by ID when I should have been using query selector and query selector all 
 I noticed couple of othello games had an array that contained eight different arrays.and that's how it came up with the idea of making 8 different functions to model the board.
 My Wednesday afternoon I was practically done or at least that's what I thought in a section of the code I was using text content and when I switched it to inner HTML and it started working 
 I reached MVP Wednesday afternoon , and Wednesday night i I was able to code out the logic behind the AI.
-Thursday morning my sister play the game her only comment was that she wished that there was an easy mode , if I had more time I would 
+Thursday morning my sister played the game her only comment was that she wished that there was an easy mode , if I had more time I would 
 Probably write another div at the start of the game that would display a  button that would allow the user  to switch between easy and hard mode. The most difficult part of this for me was paying attention to my indentations,and syntax goes more than once or something simple was ruining the whole game that took me awhile to figure out the problem. 
+
+
+
+# what I would like to get better at 
+
+i've slowly improved my attention to detail but the biggest time sink I faced was  having a typo or missing a curly brakes or using the wrong functions to call elements from my html and and spending hours just wondering why its not working and feeling like a  failure wondering wether on not im good enough to do this.
