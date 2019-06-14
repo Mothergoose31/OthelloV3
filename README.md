@@ -7,7 +7,7 @@ Monday I wrote all events that took place within the game but I was running into
 It is here where I would like to acknowledge that Monday Tuesday and Wednesday night I spent  with my neighbors kyle and rajetah (kyle works at google , rajetah works at amazon ) I made them dinner and they helped me code cumulatively they probably helped me for 9 hours 
 Without them I doubt I would have had a finished this project. 
 
-**HOW TO PLAY THE GAME**
+# HOW TO PLAY 
 
 
 For the first four moves, the players must play to one of the four squares in the middle of the board and no pieces are captured or reversed.
@@ -18,14 +18,16 @@ It can happen that a piece is played so that pieces or rows of pieces in more th
 
 The game is over when neither player has a legal move (i.e. a move that captures at least one opposing piece) or when the board is full.
 
-**Much Gratitude goes out to**
-kyle, 
-Rajetah,
-Steve ,
-Mike,
-Carlo,
-Garrett
+# MUCH GRATITUDE TO 
 
+* kyle
+* Rajetah
+* Steve ,
+* Mike,
+* Carlo,
+* Garrett
+ * pingyi
+* GA design class
 
 **Sources I looked at**
 pratically all versions of Othello on Codepen

@@ -98,6 +98,11 @@ function startNewGame() {
             humanPlayer.isPlayerTurn = true;
             checkValid(humanPlayer, compBoi, currentBoard);
         } else {
+            // An arrow function expression is a syntactically compact alternative to a regular function expression,
+            //  although without its own bindings to the this, arguments, super, or new.target keywords. Arrow function 
+            //  expressions are ill suited as methods, and they cannot be used as constructors.
+
+
             compBoi.isPlayerTurn = true;
             setTimeout(() => {
                 calculateMove();
@@ -288,6 +293,7 @@ function startNewGame() {
         }
         return nodes;
     }
+
     function getLeft(x, y, board) {
         let startX = x-1;
         let nodes = [];
