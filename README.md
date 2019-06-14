@@ -7,6 +7,17 @@ Monday I wrote all events that took place within the game but I was running into
 It is here where I would like to acknowledge that Monday Tuesday and Wednesday night I spent  with my neighbors kyle and rajetah (kyle works at google , rajetah works at amazon ) I made them dinner and they helped me code cumulatively they probably helped me for 9 hours 
 Without them I doubt I would have had a finished this project. 
 
+**HOW TO PLAY THE GAME**
+
+
+For the first four moves, the players must play to one of the four squares in the middle of the board and no pieces are captured or reversed.
+
+Each piece played must be laid adjacent to an opponent's piece so that the opponent's piece or a row of opponent's pieces is flanked by the new piece and another piece of the player's colour. All of the opponent's pieces between these two pieces are 'captured' and turned over to match the player's colour.
+
+It can happen that a piece is played so that pieces or rows of pieces in more than one direction are trapped between the new piece played and other pieces of the same colour. In this case, all the pieces in all viable directions are turned over.
+
+The game is over when neither player has a legal move (i.e. a move that captures at least one opposing piece) or when the board is full.
+
 **Much Gratitude goes out to**
 kyle, 
 Rajetah,
