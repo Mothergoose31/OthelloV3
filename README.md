@@ -28,7 +28,7 @@ first thing did was create a wireframe.
 
 
 # Problems I faced
-    This project was tackled with 2 weeks of coding experience  under my belt , problems I faced where because of either an extra 's' in my variable names , missing an end bracket, or missUse of  javascript functions  such as 
+   This project was tackled with 2 weeks of coding experience  under my belt , problems I faced where because of either an extra 's' in my variable names , missing an end bracket, or missUse of  javascript functions  such as 
 using 'getElementByClass' & getElementById when I should have been using querySelector and 'querySelectorAll' 
       Weaving in the  The logic for player # 2  gave me trouble  I ended up  re writing  some part of the game in inorder to incorporate the logic  for the Ai. 
 
