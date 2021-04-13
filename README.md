@@ -1,6 +1,6 @@
 # OthelloV3
 
-# HOW TO PLAY 
+# HOW TO PLAY OTHELLO
 
 Black plays first and draws a single token and places it on a valid spot on the grid (indicated by the tile being highlighed with a Blue dot gif). You must place a token on a spot that allows you to “flank” or “capture” at least one of your opponent’s tokenss by bordering them in a row.
 
